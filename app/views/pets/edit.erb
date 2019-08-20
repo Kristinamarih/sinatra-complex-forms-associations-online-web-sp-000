@@ -12,7 +12,11 @@
     
     <h3>Existing Owners</h3>
     <% Owner.all.each do |owner| %>
+<<<<<<< HEAD
     <input type="radio" name="pet[owner_ids][]" id="<%= owner.id %>" value="<%= owner.id %>" <%= 'checked' if owner.pets.include?(@pet) %>><%= owner.name %></input><br>
+=======
+    <input type="radio" name="pet[owner_id]" id="<%= owner.id %>" value="<%= owner.id %>" <%= 'checked' if owner.pets.include?(@pet) %>><%= owner.name %></input><br>
+>>>>>>> c0c46f18d2559fbda1a4e5b136b5f5aabeaa870c
     <% end %>
     <br>
     
